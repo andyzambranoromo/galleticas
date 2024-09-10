@@ -7,6 +7,91 @@
     <style>
         body {
             body {
+                body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e0c2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8b4513;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    position: relative;
+    z-index: 2;
+}
+
+header p {
+    margin: 5px 0 20px 0;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% -20%, #8b4513, #5a2f1b);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 80%, 80% 60%, 70% 75%, 60% 55%, 50% 70%, 40% 50%, 30% 65%, 20% 45%, 10% 60%, 0 40%);
+    z-index: 1;
+}
+
+section {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products, .contact-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #8b4513;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.cookie-background {
+    background-image: url('images/chocodelicias.jpg'); /* Puedes cambiar o eliminar esta línea si no tienes una imagen de fondo aún */
+    background-size: cover;
+    padding: 50px 0;
+}
+
     font-family: Arial, sans-serif;
     background-color: #f5e0c2;
     margin: 0;
