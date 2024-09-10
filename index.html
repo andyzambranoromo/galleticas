@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoDeliciosas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e0c2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8b4513;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            margin: 5px 0 20px 0;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products, .contact-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #8b4513;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .cookie-background {
+            background-image: url('tu_imagen_de_fondo.jpg'); /* Asegúrate de cambiarlo o eliminarlo si no tienes una imagen aún */
+            background-size: cover;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ChocoDeliciosas</h1>
+        <p>La tentación perfecta para cualquier ocasión</p>
+    </header>
+
+    <section class="cookie-background">
+        <div class="container">
+            <div class="about-us">
+                <h2>Nosotros</h2>
+                <p>En ChocoDeliciosas, nos apasiona crear las mejores galletas de chocolate, perfectas para cualquier ocasión.</p>
+            </div>
+
+            <div class="products">
+                <h2>Nuestros Productos</h2>
+                <ul>
+                    <li>Galleta Clásica de Chocolate</li>
+                    <li>Galleta Rellena de Chocolate</li>
+                    <li>Galleta con Trozos de Chocolate Blanco</li>
+                </ul>
+                <p>¡Pronto más variedades!</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contacto</h2>
+                <form action="enviar_formulario.php" method="POST">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Mensaje:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ChocoDeliciosas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
